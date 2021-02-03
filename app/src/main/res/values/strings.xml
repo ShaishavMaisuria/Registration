@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="StringName">Name</string>
+    <string name="hintName">Enter Name</string>
+    <string name="StringEmail">Email:</string>
+    <string name="stringId">ID:</string>
+    <string name="hintID">Enter ID</string>
+    <string name="hintEmail">Enter Email</string>
+    <string name="StringDepartment">Dept:</string>
+    <string name="StringSelect">Select</string>
+    <string name="StringSubmit">Submit</string>
+    <string name="StringcomputerScience">Computer Science</string>
+    <string name="StringSoftwareInfosystem">Software Info. Systems</string>
+    <string name="StringBioInformatics">Bio Informatics</string>
+    <string name="StringDataScience">Data Science</string>
+    <string name="StringCancel">Cancel</string>
+</resources>

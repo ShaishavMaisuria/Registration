@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Department">
+
+    <RadioGroup
+        android:layout_width="293dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonComputerScience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/StringcomputerScience" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSoftware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/StringSoftwareInfosystem" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBioInformatics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/StringBioInformatics" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDataScience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/StringDataScience" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/StringCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/StringSelect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancel"
+        app:layout_constraintTop_toTopOf="@+id/buttonCancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
