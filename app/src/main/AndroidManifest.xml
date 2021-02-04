@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Registration">
-        <activity android:name=".Department"></activity>
+        <activity android:name=".profile"></activity>
+        <activity android:name=".Department">
+            <intent-filter>
+                <action android:name="com.example.Registration.intent.action.View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

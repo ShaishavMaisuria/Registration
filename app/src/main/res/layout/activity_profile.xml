@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="84dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/StringName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="86dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/StringEmail"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/stringId"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewDept"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/StringDepartment"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewID"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="@+id/textViewID"
+        app:layout_constraintTop_toBottomOf="@+id/textViewID" />
+
+    <TextView
+        android:id="@+id/textViewNameProfie"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/textViewName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewEmailProfile"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmail"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNameProfie"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameProfie"
+        app:layout_constraintTop_toTopOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewIDprofile"
+        android:layout_width="185dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewID"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmailProfile"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmailProfile"
+        app:layout_constraintTop_toTopOf="@+id/textViewID" />
+
+    <TextView
+        android:id="@+id/textViewDeptprofile"
+        android:layout_width="176dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDept"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIDprofile"
+        app:layout_constraintStart_toStartOf="@+id/textViewIDprofile"
+        app:layout_constraintTop_toTopOf="@+id/textViewDept" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
