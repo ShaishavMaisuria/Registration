@@ -32,6 +32,12 @@ public class Department extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId == R.id.radioButtonComputerScience){
                     checkValue=getResources().getString(R.string.StringcomputerScience);
+                }else if(checkedId == R.id.radioButtonBioInformatics){
+                    checkValue=getResources().getString(R.string.StringBioInformatics);
+                }else if(checkedId == R.id.radioButtonSoftware){
+                    checkValue=getResources().getString(R.string.StringSoftwareInfosystem);
+                }else{
+                    checkValue=getResources().getString(R.string.StringDataScience);
                 }
             }
         });

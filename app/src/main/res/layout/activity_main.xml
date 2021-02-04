@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextPersonName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -58,8 +58,8 @@
         android:hint="@string/hintEmail"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="@+id/textViewEmail"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonName"
         app:layout_constraintTop_toTopOf="@+id/textViewEmail" />
 
     <TextView
@@ -118,7 +118,7 @@
         app:layout_constraintTop_toTopOf="@+id/textViewDepartmentValue" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSubmitMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
