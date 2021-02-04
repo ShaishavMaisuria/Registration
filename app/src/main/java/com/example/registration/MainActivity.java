@@ -1,4 +1,8 @@
 package com.example.registration;
+/**
+ * @author Shaishav Maisuria
+ * @author Jacob Smith
+ */
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,10 +41,6 @@ public class MainActivity extends AppCompatActivity {
         id=findViewById(R.id.editTextID);
 
 
-/*
-
-*/
-
         findViewById(R.id.buttonSelect).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,10 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent,REQ_CODE); //s
             }
         });
-
-
-
-
 
 findViewById(R.id.buttonSubmitMain).setOnClickListener(new View.OnClickListener() {
     @Override
@@ -92,29 +88,33 @@ findViewById(R.id.buttonSubmitMain).setOnClickListener(new View.OnClickListener(
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+try{
+    Log.d("demo","OnactivityResult "+data.toString());
+    if(resultCode==RESULT_OK ) {
+        Log.d("demo", "OnactivityResult OKAY ");
 
-        Log.d("demo","OnactivityResult "+data.toString());
-        if(resultCode==RESULT_OK ) {
-            Log.d("demo", "OnactivityResult OKAY ");
+        if(data!=null && data.hasExtra(Department.Name_key)){
 
-            if(data!=null && data.hasExtra(Department.Name_key)){
+            String dept_data=data.getStringExtra(Department.Name_key);
+            Log.d("demo", "data "+dept_data);
 
-                String dept_data=data.getStringExtra(Department.Name_key);
-                Log.d("demo", "data "+dept_data);
-
-                if (dept_data != null) {
-                    department_value.setText(String.valueOf(dept_data));
-                }
+            if (dept_data != null) {
+                department_value.setText(String.valueOf(dept_data));
+            }
 
 
             else{
                 Toast.makeText(MainActivity.this,getResources().getString(R.string.StringToastValue),Toast.LENGTH_SHORT).show();
 
             }
-            }
         }
-        else if(resultCode==RESULT_CANCELED){
-            Log.d("demo","OnactivityResult NOT OKAY");
-        }
+    }
+    else if(resultCode==RESULT_CANCELED){
+        Log.d("demo","OnactivityResult NOT OKAY");
+    }
+}catch (Exception e){
+    Log.d("demo Mainactivity", e.toString());
+}
+
     }
 }
